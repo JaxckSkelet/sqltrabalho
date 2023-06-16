@@ -34,12 +34,8 @@ PRIMARY KEY(partida_id)
 
 create table ingressos(
 ingresso_id int primary key auto_increment,
-user_id int,
 partida_id int,
-numero_ingresso varchar(20)not null,
-data_compra date not null,
-foreign key (user_id) references users (user_id),
+setor varchar(50)not null,
+preço decimal (10,2) not null,
 foreign key (partida_id) references partidas(partida_id)
 )default charset = utf8mb4
-
-
