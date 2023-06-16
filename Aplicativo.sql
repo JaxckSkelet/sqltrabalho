@@ -109,7 +109,7 @@ values
 ('America', 'Cruzeiro', '2023-12-06', 'Mineirão', '50,00');
 
 
-insert into localização
+insert into local
 (nome_local,endereco,cidade,estado,estadio,capacidade)
 values
 ('Estadio de futebol', 'Av. Antônio Abrahão Caram, 1001', 'Belo Horizonte','Minas Gerais', 'Mineirão', '61927'),
