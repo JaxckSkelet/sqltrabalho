@@ -82,3 +82,20 @@ CREATE TABLE detalhes_ingresso (
   foreign key (ingresso_id) references ingressos(ingresso_id)
 ) DEFAULT CHARSET=utf8mb4;
 
+insert into users
+(usuario,nome,Senha, email, cpf, rg)
+values
+('Arthur Gaspar', 'Arthur', '5489480', 'gaspar@email.com', '61610163036', '142627197'),
+('rafael', 'rafael', '5489880', 'rafa@email.com', '61645663036', '132624597'),
+('Jorge','Jorjão', '1234567e8',	'jorgin@email.com',	'12222222222','222222221');
+
+
+insert into vip 
+(user_id,numero_cartao,desconto_porcentagem,validade)
+values
+('4545', '1234567881234', '50', '2023-02-02'),
+('4546', '1237567881234', '50', '2023-02-05'),
+('4547', '1234567881434', '50', '2023-02-02'),
+('4557', '1234567881234', '50', '2023-03-02'),
+('4576', '1537567881234', '50', '2023-02-05'),
+('4548', '1234567881434', '50', '2023-02-02'),
