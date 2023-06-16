@@ -3,4 +3,4 @@ FROM partidas
 WHERE data_jogo > CURDATE();
 
 
-# codigo para obter a lista de todos os jogos que ainda estão disponiveis
+# codigo para obter a lista de todos os jogos que ainda estão disponiveis, portanto não ocorreram
