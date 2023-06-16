@@ -39,3 +39,14 @@ setor varchar(50)not null,
 preço decimal (10,2) not null,
 foreign key (partida_id) references partidas(partida_id)
 )default charset = utf8mb4
+
+create table compra(
+compra_id int primary key auto_increment,
+user_id int,
+ingresso_id int,
+valor decimal (10,2) not null,
+data_compra DATETIME NOT NULL,
+  foreign key (user_id) references users(user_id),
+  foreign key (ingresso_id) references ingressos(ingresso_id)
+) DEFAULT CHARSET=utf8mb4;
+
