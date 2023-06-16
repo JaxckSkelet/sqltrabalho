@@ -5,3 +5,6 @@ WHERE partidas.time_casa = 'Nome do Time da Casa'
   AND partidas.time_fora = 'Nome do Time Visitante'
   AND partidas.data_jogo = 'YYYY-MM-DD'
   AND partidas.estadio = 'Nome do Estádio';
+
+
+#codigo feito para ver os ingressos disponiveis
