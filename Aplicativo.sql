@@ -32,7 +32,7 @@ valor_ingresso decimal (10,2) not null,
 PRIMARY KEY(partida_id)
 )default charset = utf8mb4;
 
-CREATE TABLE localização (
+CREATE TABLE localizacão (
   local_id INT PRIMARY KEY AUTO_INCREMENT,
   nome_local VARCHAR(100) NOT NULL,
   endereco VARCHAR(200),
@@ -46,7 +46,7 @@ create table ingressos(
 ingresso_id int primary key auto_increment,
 partida_id int,
 setor varchar(50)not null,
-preço decimal (10,2) not null,
+preco decimal (10,2) not null,
 foreign key (partida_id) references partidas(partida_id)
 )default charset = utf8mb4;
 
