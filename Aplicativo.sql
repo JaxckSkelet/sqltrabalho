@@ -32,7 +32,7 @@ valor_ingresso decimal (10,2) not null,
 PRIMARY KEY(partida_id)
 )default charset = utf8mb4;
 
-CREATE TABLE localizacão (
+CREATE TABLE local (
   local_id INT PRIMARY KEY AUTO_INCREMENT,
   nome_local VARCHAR(100) NOT NULL,
   endereco VARCHAR(200),
