@@ -138,3 +138,11 @@ INSERT INTO detalhes_compra
 values(1,'cartão', 'aprovado', '2023-05-06', 'disponivel', null),
 (1,'cartão', 'aprovado', '2023-09-06', 'disponivel para uso', null),
 (1,'boleto', 'pendente', '2023-06-16', 'aguardando pagamento', null);
+
+INSERT INTO detalhes_ingresso
+
+(compra_id,ingresso_id,codigo_barras,data_entrada)
+
+values(1,1,'894946189498448978947','2023-05-06'),
+      (1,2,'894946189498448978947','2023-10-06'),
+      (1,3,'894946189498448978947','2023-10-06');
