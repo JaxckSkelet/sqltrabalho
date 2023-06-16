@@ -85,9 +85,10 @@ CREATE TABLE detalhes_ingresso (
 insert into users
 (usuario,nome,Senha, email, cpf, rg)
 values
+('Jorge','Jorjão', '1234567e8',	'jorgin@email.com',	'12222222222','222222221'),
 ('Arthur Gaspar', 'Arthur', '5489480', 'gaspar@email.com', '61610163036', '142627197'),
-('rafael', 'rafael', '5489880', 'rafa@email.com', '61645663036', '132624597'),
-('Jorge','Jorjão', '1234567e8',	'jorgin@email.com',	'12222222222','222222221');
+('rafael', 'rafael', '5489880', 'rafa@email.com', '61645663036', '132624597');
+
 
 
 insert into vip 
@@ -98,4 +99,13 @@ values
 ('4547', '1234567881434', '50', '2023-02-02'),
 ('4557', '1234567881234', '50', '2023-03-02'),
 ('4576', '1537567881234', '50', '2023-02-05'),
-('4548', '1234567881434', '50', '2023-02-02'),
+('4548', '1234567881434', '50', '2023-02-02');
+
+insert into partidas
+(time_casa,time_fora,data_jogo,estadio,valor_ingresso)
+values
+('Atletico', 'Cruzeiro', '2023-05-06', 'Mineirão', '50,00'),
+('Cruzeiro', 'Atletico', '2023-10-06', 'Mineirão', '50,00'),
+('America', 'Cruzeiro', '2023-12-06', 'Mineirão', '50,00');
+
+
