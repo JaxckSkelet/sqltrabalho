@@ -125,4 +125,16 @@ values
 (3, 'Setor C', 60.00);
 
 
+INSERT INTO compra (user_id, valor, data_compra, valor_com_desconto)
+VALUES 
+(1, 50.00, '2023-06-15', 25.00),
+(1, 40.00, '2023-06-15', 20.00),
+(1, 60.00, '2023-06-15', 25.00);
 
+
+INSERT INTO detalhes_compra 
+
+(compra_id,forma_pagamento,status_pagamento,data_pagamento,status_pedido,obs)
+values(1,'cartão', 'aprovado', '2023-05-06', 'disponivel', null),
+(1,'cartão', 'aprovado', '2023-09-06', 'disponivel para uso', null),
+(1,'boleto', 'pendente', '2023-06-16', 'aguardando pagamento', null);
