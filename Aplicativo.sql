@@ -158,3 +158,10 @@ INSERT INTO detalhes_ingresso
 values(1,1,'894946189498448978947','2023-05-06'),
       (1,2,'894946189498448978947','2023-10-06'),
       (1,3,'894946189498448978947','2023-10-06');
+
+
+INSERT INTO historico_compras 
+(compra_id, user_id, partida_id, quantidade_ingressos, valor_total, data_compra)
+VALUES (1, 1, 1, 2, 100.00, '2023-06-15 09:30:00'),
+(2, 2, 1, 3, 150.00, '2023-06-15 11:30:00'),
+(3, 3, 1, 1, 50.00, '2023-06-15 12:30:00');
