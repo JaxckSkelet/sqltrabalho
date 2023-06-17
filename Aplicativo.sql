@@ -55,11 +55,17 @@ compra_id int primary key auto_increment,
 user_id int,
 ingresso_id int,
 valor decimal (10,2) not null,
-data_compra DATETIME NOT NULL,
+data_compra DATETIME not null,
 valor_com_desconto decimal (10,2),
   foreign key (user_id) references users(user_id),
   foreign key (ingresso_id) references ingressos(ingresso_id)
 ) DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE forma_pagamento (
+forma_pagamento_id int primary key AUTO_INCREMENT,
+nome_forma_pagamento VARCHAR(50) not null,
+descricao VARCHAR(100)
+);
 
 create table detalhes_compra(
 detalhes_id int primary key auto_increment,
@@ -142,6 +148,13 @@ VALUES
 (1, 50.00, '2023-06-15', 25.00),
 (1, 40.00, '2023-06-15', 20.00),
 (1, 60.00, '2023-06-15', 25.00);
+
+INSERT INTO forma_pagamento (nome_forma_pagamento, descricao)
+VALUES
+  ('Cartão de Crédito', 'Pagamento realizado com cartão de crédito.'),
+  ('Boleto Bancário', 'Pagamento realizado por meio de boleto bancário.'),
+  ('Transferência Bancária', 'Pagamento feito por transferência bancária.');
+
 
 
 INSERT INTO detalhes_compra 
