@@ -82,6 +82,18 @@ CREATE TABLE detalhes_ingresso (
   foreign key (ingresso_id) references ingressos(ingresso_id)
 ) DEFAULT CHARSET=utf8mb4;
 
+CREATE TABLE historico_compras (
+  compra_id INT PRIMARY KEY,
+  user_id INT,
+  partida_id INT,
+  quantidade_ingressos INT,
+  valor_total DECIMAL(10,2),
+  data_compra DATETIME,
+  FOREIGN KEY (user_id) REFERENCES users(user_id),
+  FOREIGN KEY (partida_id) REFERENCES partidas(partida_id)
+) DEFAULT CHARSET=utf8mb4;
+
+
 insert into users
 (usuario,nome,Senha, email, cpf, rg)
 values
