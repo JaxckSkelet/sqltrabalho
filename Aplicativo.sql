@@ -63,7 +63,7 @@ valor_com_desconto decimal (10,2),
 
 CREATE TABLE forma_pagamento (
 forma_pagamento_id int primary key AUTO_INCREMENT,
-nome_forma_pagamento VARCHAR(50) not null,
+nome_forma_pagamento VARCHAR(70) not null,
 descricao VARCHAR(100)
 );
 
